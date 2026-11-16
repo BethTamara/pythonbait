@@ -11,6 +11,14 @@ A static site for a mobile notary and loan signing agent based in Midvale, Utah.
 | `site/site.js` | Mobile menu, footer year, and the Calendly inline booking widget. |
 | `vercel.json` | Serves `site/` with clean URLs (`/about`). |
 
+## Deploying
+
+The site is the `heartfelt-notary` project in the `heartfelt-glow` Vercel team. Deploy with `vercel deploy --prod --scope heartfelt-glow` from this folder.
+
+- Live address until DNS is set: https://heartfelt-notary.vercel.app
+- `www.heartfeltnotary.com` is the main address; `heartfeltnotary.com` redirects to it (308). Both are attached to the project and take effect once the domain's nameservers are `ns1.vercel-dns.com` and `ns2.vercel-dns.com`, or these records exist: `A @ 216.198.79.1` and `CNAME www b96ed21f5ce6f0b8.vercel-dns-017.com`.
+- The domain is registered at Network Solutions (bought November 2026). It can move to another registrar after the 60-day lock on new registrations.
+
 ## Before launch
 
 The draft still has placeholders. Search for `__` to find them.
