@@ -49,6 +49,12 @@ strong { color: var(--ink); font-weight: 600; }
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 20px; }
 .wrap--narrow { max-width: 780px; }
 
+/* ---------- Language bar ---------- */
+.langbar { background: var(--ink); }
+.langbar__in { max-width: var(--wrap); margin: 0 auto; padding: 5px 20px; text-align: right; }
+.langbar a { color: #fff; font-size: 0.86rem; font-weight: 600; text-underline-offset: 3px; }
+.nav__lang { display: none; }
+
 /* ---------- Header ---------- */
 .top { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, 0.96); border-bottom: 1px solid var(--line); backdrop-filter: blur(6px); }
 .top__in { max-width: var(--wrap); margin: 0 auto; padding: 10px 20px; display: flex; align-items: center; gap: 14px; }
@@ -168,6 +174,13 @@ tbody th small { display: block; font-weight: 400; font-size: 0.86rem; color: va
 .legal p:last-child { margin-bottom: 0; }
 .source { font-size: 0.88rem; color: var(--slate-soft); margin: 18px 0 0; }
 
+/* ---------- Bilingual legal notice (Utah Code 46-1-11) ---------- */
+.notice { background: var(--accent-tint); border-top: 4px solid var(--accent); border-bottom: 1px solid var(--line); padding: 28px 0; }
+.notice__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px 44px; }
+.notice__label { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
+.notice__statement { font-weight: 600; color: var(--ink); font-size: 1.02rem; line-height: 1.5; text-transform: uppercase; margin-bottom: 10px; }
+.notice__fees { font-size: 0.95rem; margin: 0; }
+
 /* ---------- Service area ---------- */
 .chips { list-style: none; padding: 0; margin: 22px 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .chips li { border: 1px solid var(--line); background: var(--mist); color: var(--ink); border-radius: 999px; padding: 7px 16px; font-size: 0.95rem; font-weight: 500; }
@@ -227,6 +240,7 @@ a.contact__item:hover { border-color: var(--navy); }
   .nav.is-open { display: flex; }
   .nav a { padding: 12px 0; font-size: 1rem; border-bottom: 1px solid var(--mist); }
   .nav a:hover, .nav a[aria-current="page"] { box-shadow: none; }
+  .nav__lang { display: block; }
   .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
@@ -241,7 +255,8 @@ a.contact__item:hover { border-color: var(--navy); }
   .btn--sm { padding: 8px 14px; }
   .section { padding: 52px 0; }
   .hero { padding: 40px 0 44px; }
-  .hero__grid, .split, .loan, .learn, .about__grid, .foot__in { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .hero__grid, .split, .loan, .learn, .about__grid, .foot__in, .notice__grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .langbar__in { padding: 5px 16px; }
   .facts, .contact, .about__facts { grid-template-columns: minmax(0, 1fr); gap: 14px; }
   .cards { grid-template-columns: minmax(0, 1fr); }
   .actions .btn { width: 100%; }
@@ -261,5 +276,5 @@ a.contact__item:hover { border-color: var(--navy); }
   .price td[data-label]::before { font-weight: 400; }
   .compare td { padding-top: 6px; }
   .compare tbody th { font-size: 1.02rem; }
-  .compare td:nth-child(3)::before { content: "Good when: "; font-weight: 600; color: var(--ink); }
+  .compare td:nth-child(3)::before { content: attr(data-label) ": "; font-weight: 600; color: var(--ink); }
 }
