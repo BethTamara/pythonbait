@@ -25,8 +25,7 @@ The draft still has placeholders. Search for `__` to find them.
 
 - The booking calendar loads from the `data-calendly-url` attribute in `site/index.html` and `site/es/index.html`.
 - Fees and credentials are on the site as the owner gave them; confirm both before launch
-- Add `hreflang` alternate links and a canonical URL to all four pages once the domain is live.
-- All four pages carry `<meta name="robots" content="noindex, nofollow">`. Remove it at launch.
+- All four pages carry `<meta name="robots" content="noindex, nofollow">`. Remove it at launch. The canonical and `hreflang` links, Open Graph tags, business structured data, `sitemap.xml` and `robots.txt` are already in place.
 
 ## Rules the copy follows
 
