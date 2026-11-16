@@ -16,7 +16,6 @@ A static site for a mobile notary and loan signing agent based in Midvale, Utah.
 The draft still has placeholders. Search for `__` to find them.
 
 - The booking calendar loads from the `data-calendly-url` attribute in `site/index.html` and `site/es/index.html`.
-- The photo placeholder in `site/about.html` and `site/es/about.html`
 - Fees and credentials are on the site as the owner gave them; confirm both before launch
 - Add `hreflang` alternate links and a canonical URL to all four pages once the domain is live.
 - All four pages carry `<meta name="robots" content="noindex, nofollow">`. Remove it at launch.
