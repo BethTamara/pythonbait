@@ -24,4 +24,16 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.heartfeltnotary.com/es/about"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.heartfeltnotary.com/about"/>
   </url>
+  <url>
+    <loc>https://www.heartfeltnotary.com/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.heartfeltnotary.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.heartfeltnotary.com/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.heartfeltnotary.com/privacy"/>
+  </url>
+  <url>
+    <loc>https://www.heartfeltnotary.com/es/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.heartfeltnotary.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.heartfeltnotary.com/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.heartfeltnotary.com/privacy"/>
+  </url>
 </urlset>
