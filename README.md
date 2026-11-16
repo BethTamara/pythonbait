@@ -1,4 +1,4 @@
-# Heartfelt Notary website (draft)
+# Heartfelt Notary website
 
 A static site for a mobile notary and loan signing agent based in Midvale, Utah. Built the same way as the Heartfelt Glow site: plain HTML and CSS in `site/`, deployed on Vercel.
 
@@ -25,7 +25,7 @@ The draft still has placeholders. Search for `__` to find them.
 
 - The booking calendar loads from the `data-calendly-url` attribute in `site/index.html` and `site/es/index.html`.
 - Fees and credentials are on the site as the owner gave them; confirm both before launch
-- All four pages carry `<meta name="robots" content="noindex, nofollow">`. Remove it at launch. The canonical and `hreflang` links, Open Graph tags, business structured data, `sitemap.xml` and `robots.txt` are already in place.
+- The site is public: the `noindex` tags were removed at launch. Canonical and `hreflang` links, Open Graph tags, business structured data, `sitemap.xml` and `robots.txt` are in place.
 
 ## Rules the copy follows
 
